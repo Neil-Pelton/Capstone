@@ -1,0 +1,125 @@
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+/* body {
+  background: url(https://st.depositphotos.com/1532470/2276/i/600/depositphotos_22760672-stock-photo-city-of-st-louis-skyline.jpg) center center no-repeat;
+  background-size: cover;
+} */
+
+.featured {
+  border: solid 2px;
+  padding: 10px 20px;
+  margin: 20px 10% 20px 10%;
+  border-radius: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#featuredText {
+  display: flex;
+  flex-direction: column;
+}
+
+#featuredImage {
+  max-height: 300px;
+  max-width: 200px;
+  min-height: 150px;
+  min-width: 100px;
+}
+
+.designs {
+  text-align: center;
+}
+
+#jumbotron {
+  background-image: url(https://img.freepik.com/free-vector/modern-flowing-blue-wave-banner-white-background_1035-18960.jpg?size=626&ext=jpg&ga=GA1.2.2133457344.1682730542&semt=ais);
+  background-size: cover;
+}
+
+#aboutFounders {
+  size: relative;
+  max-height: 400px;
+  max-width: 270px;
+  min-height: 150px;
+  min-width: 100px;
+}
+
+.aboutPath {
+  display: flex;
+  text-align: center;
+  column-gap: 40px;
+}
+
+.column {
+  flex: 50%;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 15px;
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+}
+
+footer {
+  border-top: solid 1px black;
+  padding: 2rem 2rem 4rem;
+  margin: 1rem 1rem;
+  text-align: right;
+}
