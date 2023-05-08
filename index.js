@@ -40,7 +40,7 @@ router.hooks({
           .get(`${process.env.FAKE_PRODUCTS_API_URL}/products`)
           .then(response => {
             // Storing retrieved data in state
-            store.ProductsAPI.product = response.data;
+            store.ProductsAPI.products = response.data;
             done();
           })
           .catch((error) => {
@@ -48,7 +48,7 @@ router.hooks({
             done();
           });
           break;
-      default :
+      default:
         done();
     }
   },
