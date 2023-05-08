@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default state => html`
-  <h1>Products from API</h1>
+<h1>Products from API</h1>
 
 <table id="products">
   <tr>
@@ -15,10 +15,10 @@ export default state => html`
       .map(product => {
         return `<tr><td>${product.title}</td><td>${product.image}</td><td>${
           product.price
-        }</td><td>${product.description.join(" & ")}</td><td>${
+        }</td><td>${product.description}</td><td>${
           product.catagory
         }</td></tr>`;
       })
       .join("")}
   </table>
-  `;
+`;
