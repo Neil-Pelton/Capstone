@@ -35,13 +35,16 @@ router.hooks({
 
     // Add a switch case statement to handle multiple routes
     switch (view) {
-      case "ProductsAPI":
+      case "Products":
         axios
-          .get(`${process.env.FAKE_PRODUCTS_API_URL}/products`)
+          .get(`${process.env.FAKE_PRODUCTS_API_URL}`)
           .then(response => {
             // Storing retrieved data in state
-            store.ProductsAPI.products = response.data;
-            done();
+            console.log("response", response);
+            store.Products.products = response.data;
+          // .then((res) => res.json())
+          // .then((json) => console.log(json))
+            done()
           })
           .catch((error) => {
             console.log("It puked", error);
@@ -53,11 +56,15 @@ router.hooks({
     }
   },
   already: (params) => {
-    const view = params && params.data && params.data.view ? capitalize(params.data.view) : "Home";
+    const view = params && params.data && params.data.view ? capitalize(params.data.view) : "Products";
 
     render(store[view]);
   }
 });
+
+fetch("https://fakestoreapi.com/products")
+  .then((res) => res.json())
+  .then((json) => console.log(json));
 
 router
   .on({
