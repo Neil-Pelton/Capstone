@@ -7,18 +7,14 @@ export default state => html`
   <tr>
     <th>Title</th>
     <th>Image</th>
-    <th>Price</th>
     <th>Description</th>
-    <th>Catagory</th>
+    <th>Price</th>
     </tr>
     ${state.products //getting data from state bc of what we did with API's in root index.js
-      .map(product => {
-        return `<tr><td>${product.title}</td><td>${product.image}</td><td>${
-          product.price
-        }</td><td>${product.description}</td><td>${
-          product.catagory
-        }</td></tr>`;
-      })
-      .join("")}
+    .map(product => {
+      return `<tr><td>${product.title}</td><td><img src=${product.image} id=productsImgs /></td><td>${product.description}</td><td>$${product.price}</td></tr>`;
+    })
+    .join("")}
   </table>
 `;
+//for images, use .map to create an array of each of the urls for images, then create a new html object for each one. Each of those objects is going to be an image tag and the src will be the variable name
