@@ -55,6 +55,11 @@ header {
   min-width: 100px;
 }
 
+.about {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .aboutPath {
   display: flex;
   text-align: center;
@@ -63,6 +68,35 @@ header {
 
 .column {
   flex: 50%;
+}
+
+form {
+  border: 5px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+
+}
+
+form > * {
+  margin: 0.5rem;
+}
+
+form > input[type="submit"] {
+  width: 25%;
+  margin: 0.5rem;
+  margin-right: auto;
+}
+
+#products {
+  display: grid;
+  padding: 10px 5px 5px 5px;
+}
+
+#productsImgs {
+  max-width: 270px;
+  max-height: 400px;
 }
 
 @media (max-width: 600px) {

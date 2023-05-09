@@ -15,4 +15,4 @@ export { default as design14socks } from "./design14socks.jpg";
 export { default as design15user } from "./design15user.jpg";
 export { default as design16user } from "./design16user.jpg";
 export { default as designFullGrid } from "./designFullGrid.jpg";
-export { default as founders } from "./me&izaiah.jpg";
+export { default as founders } from "./founders.jpg";

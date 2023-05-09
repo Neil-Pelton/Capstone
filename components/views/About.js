@@ -1,11 +1,12 @@
 import html from "html-literal";
+import founders from "/assets/img/founders.jpg";
 
 export default () => html`
 <div class="about">
   <h1 id="about">About Us</h1>
 
   <div class="aboutUs" >
-    <img src="assets/img/me&izaiah.jpg" id="aboutFounders">
+    <img src="${founders}" id="aboutFounders">
     <p>My name is Neil (right), to my left is Izaiah, and we are 22 year old entrepreneurs.  </p>
   </div>
 
