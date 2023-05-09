@@ -60,6 +60,10 @@ header {
   margin-right: 5%;
 }
 
+.aboutUs {
+  margin: 10% 10% 10% 10%;
+}
+
 .aboutPath {
   display: flex;
   text-align: center;
