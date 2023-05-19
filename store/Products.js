@@ -1,5 +1,5 @@
 export default {
   header: "Products",
   view: "Products",
-  products: {},
+  products: [], //data from api stored here
 };

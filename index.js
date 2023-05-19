@@ -37,11 +37,11 @@ router.hooks({
     switch (view) {
       case "Products":
         axios
-          .get(`${process.env.FAKE_PRODUCTS_API_URL}`)
+          .get(`${process.env.FAKE_PRODUCTS_API_URL}`) //calling api from .env
           .then(response => {
             // Storing retrieved data in state
             console.log("response", response);
-            store.Products.products = response.data;
+            store.Products.products = response.data; //takes api-products from Products.js from store folder,
           // .then((res) => res.json())
           // .then((json) => console.log(json))
             done()
