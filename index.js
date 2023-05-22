@@ -27,6 +27,35 @@ function afterRedner(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+
+  if (st.view === "Contact") {
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      const requestData = {
+        name: inputList.name.value,
+        email: inputList.email.value,
+        reason: inputList.reason.value,
+        description: inputList.description.value,
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.RESPONSES_API_URL}/responses`, requestData)
+        .then(response => {
+          // Push the new response onto the Responses state responses attribute, so it can be displayed in the pizza list
+          store.Responses.responses.push(response.data);
+          router.navigate("/Responses");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
+
 }
 
 router.hooks({

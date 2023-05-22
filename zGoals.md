@@ -10,3 +10,14 @@
 - Convert your capstone to an SPA
 - From this point onward you should be working on your SPA project
 - Add functionality as you learn new things in class
+
+
+# To-Do
+- fix CSS for description text-box on Contact page
+- Create page to show user responses
+- Create API to store and display info
+- Create model for API
+- Create routes for API
+- Host the backend on Render.com and connect MongoDB Atlas using a environment variable
+- Connect hosted API to capstone SPA
+- Style both API pages

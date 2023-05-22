@@ -1,7 +1,8 @@
 // 'Import' the Express module instead of http
 const express = require("express");
 const dotenv = require("dotenv");
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const responses = require("./routers/responses");
 // Initialize the Express application
 const app = express();
 
@@ -69,6 +70,7 @@ app.post("/add", (request, response) => {
   response.json(responseBody);
 });
 
+app.use("/responses", responses);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
