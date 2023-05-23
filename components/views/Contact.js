@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default () => html`
 <div class="contactUs">
-  <form id="contactUs" method="POST" action="https://formspree.io/f/mbjewdgw">
+  <form id="contactUs" method="POST" action="">
     <h2>Contact Us</h2>
     <div>
       <label for="name">Name:</label>
