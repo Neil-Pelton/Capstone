@@ -28,12 +28,21 @@ function afterRedner(state) {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
 
-  if (st.view === "Contact") {
+  if (state.view === "Contact") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
       const inputList = event.target.elements;
       console.log("Input Element List", inputList);
+
+      const responses = [];
+      // Interate over the toppings input group elements
+      // for (let input of inputList.responses) {
+      //   // If the value of the checked attribute is true then add the value to the toppings array
+      //   if (input.checked) { //if toppings checkbox is selected
+      //     toppings.push(input.value);
+      //   }
+      // }
 
       const requestData = {
         name: inputList.name.value,
@@ -80,6 +89,22 @@ router.hooks({
             done();
           });
           break;
+
+        case "Responses":
+        // New Axios get request utilizing already made environment variable
+        axios
+          .get(`${process.env.RESPONSES_API_URL}/responses`)
+          .then(response => {
+            // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
+            console.log("response", response);
+            store.Responses.responses = response.data; //response.data = array of objects
+            done();
+          })
+          .catch((error) => { //if error occurs, catch "catches" error and returns:
+            console.log("It puked", error);
+            done();
+          });
+        break;
       default:
         done();
     }

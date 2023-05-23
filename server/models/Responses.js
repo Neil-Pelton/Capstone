@@ -8,7 +8,6 @@ const responsesSchema = new mongoose.Schema({//schema defines what a valid docum
   },
   email: {
     type: String,
-    validate: /^[A-Za-z0-9 ]*$/
   },
   reason: {
     type: String,

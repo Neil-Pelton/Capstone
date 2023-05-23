@@ -21,3 +21,5 @@
 - Host the backend on Render.com and connect MongoDB Atlas using a environment variable
 - Connect hosted API to capstone SPA
 - Style both API pages
+
+- index.js for when on contacts page, info is being posted and being handled appropriately
