@@ -23,3 +23,5 @@
 - Style both API pages
 
 - index.js for when on contacts page, info is being posted and being handled appropriately
+- check routes for express server to see if they function properly. check for successful get and post requests in insomnia
+- double check if console is throwing errors when submitting. if no errors, try to make a get/post request through insomnia

@@ -17,12 +17,12 @@ function render(state = store.Home) {
     ${Footer()}
   `;
 
-  afterRedner(state);
+  afterRender(state);
 
   router.updatePageLinks();
 }
 
-function afterRedner(state) {
+function afterRender(state) {
   //add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
@@ -35,7 +35,7 @@ function afterRedner(state) {
       const inputList = event.target.elements;
       console.log("Input Element List", inputList);
 
-      const responses = [];
+      //const responses = [];
       // Interate over the toppings input group elements
       // for (let input of inputList.responses) {
       //   // If the value of the checked attribute is true then add the value to the toppings array
@@ -56,8 +56,8 @@ function afterRedner(state) {
         .post(`${process.env.RESPONSES_API_URL}/responses`, requestData)
         .then(response => {
           // Push the new response onto the Responses state responses attribute, so it can be displayed in the pizza list
-          store.Responses.responses.push(response.data);
-          router.navigate("/Responses");
+          //store.Responses.responses.push(requestData);
+          router.navigate("/responses");
         })
         .catch(error => {
           console.log("It puked", error);
