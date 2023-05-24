@@ -10,16 +10,16 @@ export default () => html`
     </div>
     <div>
       <label for="email">Email:</label>
-      <input type="email" name="email" id="email" placeholder="example@email.com" required />
+      <input type="text" name="email" id="email" placeholder="example@email.com" required />
     </div>
     <div>
     <label for="reason">Reason:</label>
     <select id="reason" name="reason">
-      <option value="">Select a Reason</option>
-      <option value="question">Question</option>
-      <option value="problem">Problem with Clothing</option>
-      <option value="return">Return Item</option>
-      <option value="other">Other</option>
+      <option>Select a Reason</option>
+      <option>Question</option>
+      <option>Problem with Clothing</option>
+      <option>Return Item</option>
+      <option>Other</option>
     </select>
     </div>
     <div>

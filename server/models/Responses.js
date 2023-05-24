@@ -12,7 +12,6 @@ const responsesSchema = new mongoose.Schema({//schema defines what a valid docum
   reason: {
     type: String,
     required: true,
-    enum: ["Question", "Problem with Clothing", "Return Item", "Other"]
   },
   description: {
     type: String,
