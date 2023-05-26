@@ -31,14 +31,12 @@
 - LOGO
 
 - clicking on featured designs takes you to it's description
+    - fix sizing for mobile
 
 - ADD USER SUBMISSIONS PAGE
 
 
 # Ideas
-- make home page into grid: separate div for each picture, containing img, <h3>Title</h3>, and <p>description</p>
-    - make a grid for each view since grid isn't responsive
-    - fixes the problem of text not aligning with imgs in columns
 
 - add "like" button with counter to responses page
 
@@ -80,3 +78,7 @@
 - display form responses on a page
 - use an external products API to show understanding
 - add bs designs with labels and descriptions as placeholders
+- make home page into grid: separate div for each picture, containing img, <h3>Title</h3>, and <p>description</p>
+    - make a grid for each view since grid isn't responsive
+    - fixes the problem of text not aligning with imgs in columns
+    - easier to manipulate than columns
