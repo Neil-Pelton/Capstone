@@ -12,7 +12,7 @@ export default state => html`
     </tr>
     ${state.products //getting data from state bc of what we did with API's in root index.js
     .map(product => {
-      return `<tr><td>${product.title}</td><td><img src=${product.image} id=productsImgs /></td><td>${product.description}</td><td>$${product.price}</td></tr>`;
+      return `<tr><td>${product.title}</td><td><img src=${product.image} id="productsImgs" /></td><td>${product.description}</td><td>$${product.price}</td></tr>`;
     })
     .join("")}
   </table>

@@ -10,7 +10,7 @@ export default () => html`
     </div>
     <div>
       <label for="email">Email:</label>
-      <input type="text" name="email" id="email" placeholder="example@email.com" required />
+      <input type="email" name="email" id="email" placeholder="example@email.com" required />
     </div>
     <div>
     <label for="reason">Reason:</label>

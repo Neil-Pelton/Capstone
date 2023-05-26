@@ -24,7 +24,7 @@ function render(state = store.Home) {
 
 function afterRender(state) {
   //add menu toggle to bars icon in nav bar
-  document.querySelector(".fa-bars").addEventListener("click", () => {
+  document.querySelector(".fa-list").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
 
