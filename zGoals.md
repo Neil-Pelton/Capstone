@@ -7,9 +7,11 @@
 
 # To-Do
 - make page responsive to window size changes
-    - home
-    - products
-    - responses
+    - home          DONE
+    - products      CHECK IDEAS
+        - on hidden mobile, only display img and title. Clicking on title shows pop-up with description and price
+    - responses     DONE
+        - on hidden mobile, only display name and description
 
 - Change descriptions of designs 9-16 on home page
 
@@ -37,8 +39,12 @@
 
 
 # Ideas
+- add id's to <th>email, reason</th>, hidden mobile view only shows name and description.
+- add id's to <th>description, price</th>, hidden mobile view only shows title and image
+    - clicking title shows pop-up with full description of item
 
 - add "like" button with counter to responses page
+    - event handler - listen for click - likes+1=newTotal - display like icon and count - if clicked stay clicked (avoid spamming likes)
 
 - reference wireframes: helps for demo day and presentation to have the product similar to the wireframe, and dive into why I made the changes that I did
 

@@ -96,17 +96,15 @@ form > input[type="submit"] {
 #products {
   display: grid;
   padding: 10px 5px 5px 5px;
-}
-#products {
   font-size: 1.2em;
   height: auto;
   width: 92.5%;
   margin: auto;
 }
-#products tbody {
+#products > tbody {
   width: 100%;
 }
-#products th {
+#products > th {
   text-align: center;
 }
 #productsImgs {
