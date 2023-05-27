@@ -45,8 +45,12 @@
 
 - add "like" button with counter to responses page
     - event handler - listen for click - likes+1=newTotal - display like icon and count - if clicked stay clicked (avoid spamming likes)
+    - create function in index.js for counter
+    - if red, x+1. if grey, x-1. start navy blue
 
 - reference wireframes: helps for demo day and presentation to have the product similar to the wireframe, and dive into why I made the changes that I did
+
+- add sections for each response, make it look cleaner and more organized
 
 
 

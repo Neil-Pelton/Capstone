@@ -134,6 +134,20 @@ th {
   border-bottom: 3px solid black;
 }
 
+
+
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: grey;
+}
+.btn i:hover {
+  cursor: pointer;
+}
+
+
+
 @media (max-width: 550px) {
   .column {
     width: 100%;
