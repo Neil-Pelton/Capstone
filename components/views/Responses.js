@@ -16,8 +16,8 @@ export default state => html`
         <td class="hidden--mobile">${responses.email}</td>
         <td class="hidden--mobile">${responses.reason}</td>
         <td>${responses.description}</td>
-        <td>
-          <button onclick="Toggle()" id="btn1" class="btn">
+        <td class="heart-btn">
+          <button onclick="toggleLike()" id="btn1" class="btn">
             <i class="fa-solid fa-heart"></i>
           </button>
         </td>

@@ -116,15 +116,15 @@ router.hooks({
   }
 });
 
-// var btnvar1 = document.getElementById("btn1");
-// function Toggle() {
-//   if (btnvar1.style.color == "red") {
-//     btnvar1.style.color = "grey"
-//   }
-//   else {
-//     btnvar1.style.color = "red"
-//   }
-// }
+var btnvar1 = document.getElementById("btn1");
+function toggleLike() {
+  if (btnvar1.style.color == "red") {
+    btnvar1.style.color = "grey"
+  }
+  else {
+    btnvar1.style.color = "red"
+  }
+}
 
 router
   .on({
