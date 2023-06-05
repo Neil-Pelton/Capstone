@@ -19,6 +19,26 @@
 
 - add "like" buttons with counter for designs page
     - maybe add a hidden "comments" section under pictures using icon?
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: grey;
+}
+.btn i:hover {
+  cursor: pointer;
+}
+
+
+<td class="heart-btn">
+          <button onclick="toggleLike()" id="btn1" class="btn">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </td>
+
+
+
+
 
 - spice up the contact page, it's so fuckin boring right now
 

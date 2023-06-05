@@ -7,7 +7,6 @@ export default state => html`
       <th class="hidden--mobile">Email</th>
       <th class="hidden--mobile">Reason</th>
       <th>Description</th>
-      <th>Likes</th>
     </tr>
     ${state.responses //getting data from state bc of what we did with API's in root index.js
     .map(responses => {
@@ -16,11 +15,6 @@ export default state => html`
         <td class="hidden--mobile">${responses.email}</td>
         <td class="hidden--mobile">${responses.reason}</td>
         <td>${responses.description}</td>
-        <td class="heart-btn">
-          <button onclick="toggleLike()" id="btn1" class="btn">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </td>
       </tr>`;
     })
     .join("")}

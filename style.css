@@ -2,7 +2,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-family: 'Source Sans Pro', 'Yanone Kaffeesatz', sans-serif;
-  background-color: #f2f2f2;
+  background: linear-gradient(0.25turn, #f2f2f2, #4fc3f7, #f2f2f2) ;
 }
 
 header {
@@ -10,6 +10,7 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px 10px 10px 10px;
+  width: 100%;
 }
 
 /* body {
@@ -78,18 +79,21 @@ header {
 form {
   border: 5px solid black;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 1rem;
-
+  margin: auto;
+  width: 80%;
 }
 form > * {
   margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 form > input[type="submit"] {
   width: 25%;
-  margin: 0.5rem;
-  margin-right: auto;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 
@@ -136,15 +140,7 @@ th {
 
 
 
-.btn {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: grey;
-}
-.btn i:hover {
-  cursor: pointer;
-}
+
 
 
 
