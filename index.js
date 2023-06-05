@@ -24,7 +24,7 @@ function render(state = store.Home) {
 
 function afterRender(state) {
   //add menu toggle to bars icon in nav bar
-  document.querySelector(".fa-bars").addEventListener("click", () => {
+  document.querySelector(".fa-list").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
 
@@ -116,6 +116,16 @@ router.hooks({
   }
 });
 
+var btnvar1 = document.getElementById("btn1");
+function toggleLike() {
+  if (btnvar1.style.color == "red") {
+    btnvar1.style.color = "grey"
+  }
+  else {
+    btnvar1.style.color = "red"
+  }
+}
+
 router
   .on({
     "/": () => render(),
@@ -129,3 +139,6 @@ router
     }
   })
   .resolve();
+
+
+

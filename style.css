@@ -1,6 +1,8 @@
-main {
+body {
   margin-left: 10%;
   margin-right: 10%;
+  font-family: 'Source Sans Pro', 'Yanone Kaffeesatz', sans-serif;
+  background: linear-gradient(0.25turn, #f2f2f2, #4fc3f7, #f2f2f2) ;
 }
 
 header {
@@ -8,12 +10,14 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px 10px 10px 10px;
+  width: 100%;
 }
 
 /* body {
   background: url(https://st.depositphotos.com/1532470/2276/i/600/depositphotos_22760672-stock-photo-city-of-st-louis-skyline.jpg) center center no-repeat;
   background-size: cover;
 } */
+
 
 .featured {
   border: solid 2px;
@@ -25,27 +29,28 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-
 #featuredText {
   display: flex;
   flex-direction: column;
 }
-
 #featuredImage {
-  max-height: 300px;
+  max-height: 250px;
   max-width: 200px;
-  min-height: 150px;
+  min-height: 125px;
   min-width: 100px;
+  margin: auto;
 }
-
-.designs {
+.designsHeader {
   text-align: center;
 }
+
+
 
 #jumbotron {
   background-image: url(https://img.freepik.com/free-vector/modern-flowing-blue-wave-banner-white-background_1035-18960.jpg?size=626&ext=jpg&ga=GA1.2.2133457344.1682730542&semt=ais);
   background-size: cover;
 }
+
 
 #aboutFounders {
   size: relative;
@@ -54,56 +59,92 @@ header {
   min-height: 150px;
   min-width: 100px;
 }
-
 .about {
   margin-left: 5%;
   margin-right: 5%;
 }
-
 .aboutUs {
   margin: 10% 10% 10% 10%;
 }
-
 .aboutPath {
   display: flex;
   text-align: center;
   column-gap: 40px;
 }
-
 .column {
   flex: 50%;
 }
 
+
 form {
   border: 5px solid black;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 1rem;
-
+  margin: auto;
+  width: 80%;
 }
-
 form > * {
   margin: 0.5rem;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 form > input[type="submit"] {
   width: 25%;
-  margin: 0.5rem;
-  margin-right: auto;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
+
 
 #products {
   display: grid;
   padding: 10px 5px 5px 5px;
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
 }
-
+#products > tbody {
+  width: 100%;
+}
+#products > th {
+  text-align: center;
+}
 #productsImgs {
-  max-width: 270px;
-  max-height: 400px;
+  max-width: 202px;
+  max-height: 300px;
+  min-width: 100px;
+  min-height: 150px;
 }
 
-@media (max-width: 600px) {
+
+#responses {
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
+}
+
+#responses tbody {
+  width: 100%;
+}
+
+#responses th {
+  text-align: left;
+}
+
+th {
+  border-bottom: 3px solid black;
+}
+
+
+
+
+
+
+
+@media (max-width: 550px) {
   .column {
     width: 100%;
   }
@@ -133,6 +174,34 @@ form > input[type="submit"] {
     padding: 0.5rem;
     list-style-type: none;
   }
+
+  .designColumns {
+    flex: 50%;
+  }
+
+  .designsGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+  }
+
+  #ourDesigns {
+    max-height: 2500px;
+    max-width: 200px;
+    min-height: 125px;
+    min-width: 100px;
+    height: auto;
+    width: 60%;
+  }
+
+  #grid {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5%;
+  }
 }
 
 @media (min-width: 550px) {
@@ -150,9 +219,37 @@ form > input[type="submit"] {
     border-radius: 15px;
   }
 
-  nav > .fa-bars {
+  nav > .fa-list {
     display: none;
   }
+
+  .designsGrid {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  #ourDesigns {
+    max-height: 250px;
+    max-width: 200px;
+    min-height: 125px;
+    min-width: 100px;
+    height: auto;
+    width: 60%;
+  }
+
+  #grid {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5%;
+  }
+}
+
+.designColumns {
+  flex: 25%;
 }
 
 footer {
