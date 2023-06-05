@@ -10,6 +10,7 @@
     - home          DONE
     - products      CHECK IDEAS
         - on hidden mobile, only display img and title. Clicking on title shows pop-up with description and price
+        - POP UPS VIDEO https://www.youtube.com/watch?v=iE_6pQ3RlZU
     - responses     DONE
         - on hidden mobile, only display name and description
 

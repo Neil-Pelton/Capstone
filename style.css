@@ -210,7 +210,6 @@ th {
     justify-content: space-evenly;
     padding: 0 0;
   }
-
   nav > ul > li {
     display: inline-block;
     text-decoration: none;
@@ -218,7 +217,10 @@ th {
     padding: 0.5rem 0.5rem;
     border-radius: 15px;
   }
-
+  nav > ul > li:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+  }
   nav > .fa-list {
     display: none;
   }
